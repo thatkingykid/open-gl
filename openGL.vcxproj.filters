@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Core\VertexShader.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Core\FragmentShader.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Core\ShaderLoader.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="GameModel.cpp">
+      <Filter>Models</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{b37ab9b4-11a8-4f17-a6dd-0713f5d3d569}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{6e676796-2831-463f-8c00-b82712933ca4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models">
+      <UniqueIdentifier>{7eeda3a3-4f4a-4148-8deb-7348f7371507}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\ShaderLoader.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexFormat.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GameModels.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
