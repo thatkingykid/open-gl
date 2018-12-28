@@ -1,7 +1,7 @@
 #pragma once
 #include <GL\glew.h>
 #include <GL\freeglut.h>
-#include "Core\VertexFormat.h"
+#include "../Core/VertexFormat.h"
 #include <vector>
 #include <map>
 

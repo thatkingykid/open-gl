@@ -2,20 +2,26 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="Core\VertexShader.glsl">
+    <None Include="Shaders\FragmentShader.glsl">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="Core\FragmentShader.glsl">
+    <None Include="Shaders\VertexShader.glsl">
       <Filter>Shaders</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Core\ShaderLoader.cpp">
-      <Filter>Core</Filter>
-    </ClCompile>
-    <ClCompile Include="GameModel.cpp">
+    <ClCompile Include="Models\GameModel.cpp">
       <Filter>Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Managers\ShaderManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Init\InitGlew.cpp">
+      <Filter>Core\Init</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Init\InitGlut.cpp">
+      <Filter>Core\Init</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -28,16 +34,37 @@
     <Filter Include="Models">
       <UniqueIdentifier>{7eeda3a3-4f4a-4148-8deb-7348f7371507}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Managers">
+      <UniqueIdentifier>{0f6992f7-aefa-4de0-a496-ef82ffa06c28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Init">
+      <UniqueIdentifier>{1287ef25-4634-4fbd-8bc0-4d25a0036aa4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Core\ShaderLoader.h">
-      <Filter>Core</Filter>
-    </ClInclude>
-    <ClInclude Include="VertexFormat.h">
-      <Filter>Core</Filter>
-    </ClInclude>
     <ClInclude Include="GameModels.h">
       <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\VertexFormat.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Managers\ShaderManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Init\WindowInfo.h">
+      <Filter>Core\Init</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Init\ContextInfo.h">
+      <Filter>Core\Init</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Init\FrameBufferInfo.h">
+      <Filter>Core\Init</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Init\InitGlew.h">
+      <Filter>Core\Init</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Init\InitGlut.h">
+      <Filter>Core\Init</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,6 +1,7 @@
-﻿  ShaderLoader.cpp
-  GameModel.cpp
+﻿  InitGlew.cpp
+  InitGlut.cpp
   main.cpp
-c:\users\james king\source\repos\opengl\main.cpp(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  ShaderManager.cpp
+  GameModel.cpp
   Generating Code...
-  openGL.vcxproj -> C:\Users\James King\source\repos\openGL\Debug\openGL.exe
+  openGL.vcxproj -> C:\source\open-gl\Debug\openGL.exe

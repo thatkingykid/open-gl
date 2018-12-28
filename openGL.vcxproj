@@ -115,19 +115,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="Core\FragmentShader.glsl" />
-    <None Include="Core\VertexShader.glsl" />
     <None Include="packages.config" />
+    <None Include="Shaders\FragmentShader.glsl" />
+    <None Include="Shaders\VertexShader.glsl" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Core\ShaderLoader.cpp" />
-    <ClCompile Include="GameModel.cpp" />
+    <ClCompile Include="Core\Init\InitGlew.cpp" />
+    <ClCompile Include="Core\Init\InitGlut.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Managers\ShaderManager.cpp" />
+    <ClCompile Include="Models\GameModel.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Core\ShaderLoader.h" />
+    <ClInclude Include="Core\Init\ContextInfo.h" />
+    <ClInclude Include="Core\Init\FrameBufferInfo.h" />
+    <ClInclude Include="Core\Init\InitGlew.h" />
+    <ClInclude Include="Core\Init\InitGlut.h" />
+    <ClInclude Include="Core\Init\WindowInfo.h" />
+    <ClInclude Include="Core\VertexFormat.h" />
     <ClInclude Include="GameModels.h" />
-    <ClInclude Include="VertexFormat.h" />
+    <ClInclude Include="Managers\ShaderManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

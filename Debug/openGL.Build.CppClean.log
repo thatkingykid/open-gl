@@ -1,13 +1,14 @@
-c:\users\james king\source\repos\opengl\debug\vc141.pdb
-c:\users\james king\source\repos\opengl\debug\vc141.idb
-c:\users\james king\source\repos\opengl\debug\main.obj
-c:\users\james king\source\repos\opengl\debug\shaderloader.obj
-c:\users\james king\source\repos\opengl\debug\opengl.exe
-c:\users\james king\source\repos\opengl\debug\opengl.ilk
-c:\users\james king\source\repos\opengl\debug\opengl.pdb
-c:\users\james king\source\repos\opengl\debug\opengl.tlog\cl.command.1.tlog
-c:\users\james king\source\repos\opengl\debug\opengl.tlog\cl.read.1.tlog
-c:\users\james king\source\repos\opengl\debug\opengl.tlog\cl.write.1.tlog
-c:\users\james king\source\repos\opengl\debug\opengl.tlog\link.command.1.tlog
-c:\users\james king\source\repos\opengl\debug\opengl.tlog\link.read.1.tlog
-c:\users\james king\source\repos\opengl\debug\opengl.tlog\link.write.1.tlog
+c:\source\open-gl\debug\vc141.pdb
+c:\source\open-gl\debug\vc141.idb
+c:\source\open-gl\debug\gamemodel.obj
+c:\source\open-gl\debug\shadermanager.obj
+c:\source\open-gl\debug\main.obj
+c:\source\open-gl\debug\opengl.exe
+c:\source\open-gl\debug\opengl.ilk
+c:\source\open-gl\debug\opengl.pdb
+c:\source\open-gl\debug\opengl.tlog\cl.command.1.tlog
+c:\source\open-gl\debug\opengl.tlog\cl.read.1.tlog
+c:\source\open-gl\debug\opengl.tlog\cl.write.1.tlog
+c:\source\open-gl\debug\opengl.tlog\link.command.1.tlog
+c:\source\open-gl\debug\opengl.tlog\link.read.1.tlog
+c:\source\open-gl\debug\opengl.tlog\link.write.1.tlog
