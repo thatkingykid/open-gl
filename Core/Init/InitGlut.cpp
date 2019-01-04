@@ -2,6 +2,9 @@
 
 using namespace Core::Init;
 
+Core::Init::IListener* Core::Init::InitGlut::listener = NULL;
+Core::WindowInfo Core::Init::InitGlut::windowInfo;
+
 void InitGlut::Init(const Core::WindowInfo & window, const Core::ContextInfo & context, const Core::FrameBufferInfo & frameBuffer)
 {
 	int fakeargc = 1;
@@ -29,6 +32,7 @@ void InitGlut::Init(const Core::WindowInfo & window, const Core::ContextInfo & c
 
 	Init::InitGlew::Init();
 	glutSetOption(GLUT_ACTION_ON_WINDOW_CLOSE, GLUT_ACTION_GLUTMAINLOOP_RETURNS);
+	windowInfo = window;
 	PrintGLInfo(window, context);
 }
 
@@ -73,16 +77,31 @@ void InitGlut::IdleCallback(void)
 
 void InitGlut::DisplayCallback(void)
 {
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	glClearColor(0.0, 0.0, 0.0, 1.0);
-	glutSwapBuffers();
+	if (listener) {
+		listener->NotifyBeginFrame();
+		listener->NotifyDisplayFrame();
+		glutSwapBuffers();
+		listener->NotifyEndFrame();
+	}
 }
 
 void InitGlut::ReshapeCallback(int width, int height)
 {
+	if (InitGlut::windowInfo.reshapable) {
+		if (listener) {
+			listener->NotifyReshape(width, height, InitGlut::windowInfo.width, InitGlut::windowInfo.height);
+		}
+		InitGlut::windowInfo.width = width;
+		InitGlut::windowInfo.height = height;
+	}
 }
 
 void InitGlut::CloseCallback()
 {
 	Close();
+}
+
+void Core::Init::InitGlut::SetListener(Core::Init::IListener *& listener)
+{
+	InitGlut::listener = listener;
 }

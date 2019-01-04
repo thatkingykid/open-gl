@@ -23,6 +23,7 @@
     <ClCompile Include="Core\Init\InitGlut.cpp">
       <Filter>Core\Init</Filter>
     </ClCompile>
+    <ClCompile Include="Managers\SceneManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Core">
@@ -65,6 +66,10 @@
     </ClInclude>
     <ClInclude Include="Core\Init\InitGlut.h">
       <Filter>Core\Init</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Init\IListener.h" />
+    <ClInclude Include="Managers\SceneManager.h">
+      <Filter>Managers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

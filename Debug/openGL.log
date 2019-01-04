@@ -1,7 +1,9 @@
 ﻿  InitGlew.cpp
   InitGlut.cpp
   main.cpp
+  SceneManager.cpp
   ShaderManager.cpp
   GameModel.cpp
   Generating Code...
+     Creating library C:\source\open-gl\Debug\openGL.lib and object C:\source\open-gl\Debug\openGL.exp
   openGL.vcxproj -> C:\source\open-gl\Debug\openGL.exe
